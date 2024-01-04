@@ -6,8 +6,13 @@ export class UserService{
       ]
       addUser(item:string){
           
+        
+       const flag= this.users.filter(i=>{
+           
+            return i.name===item
+        })
+       if(!flag) this.users.push({name:item})
 
-        this.users.push({name:item})
       }
       onRemove(position:any){
           this.users.splice(position,1)
