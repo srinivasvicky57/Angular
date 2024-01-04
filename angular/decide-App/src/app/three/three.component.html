@@ -1,0 +1,10 @@
+<h3>Your question Was:</h3>
+<p>{{appValues.question}}</p>
+<h3>Your answer is:</h3>
+<h2 class="text-sucess">{{appValues.answers}}</h2>
+<div class="form-group">
+    <button type="button" class="btn btn-light btn-block"   (click)="doItAgain()"
+     >Don't like it !!</button> 
+     <button type="button" class="btn btn-dark btn-block"  (click)="startAgain()"
+     >Start Over..</button> 
+</div>

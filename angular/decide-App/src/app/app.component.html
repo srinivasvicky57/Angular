@@ -1,0 +1,11 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+  <div class="mb-4">
+    <h1>{{title}}</h1>
+  </div>
+  <div [ngSwitch]="appValues.visiblePanel">
+    <app-one *ngSwitchCase="'one'" [appValues]="appValues"  (next)="handleNext($event)"></app-one>
+    <app-two *ngSwitchCase="'two'" [appValues]="appValues"   (next)="handleNext($event)" ></app-two>
+    <app-three *ngSwitchCase="'three'" [appValues]="appValues" (next)="handleNext($event)"></app-three>
+  </div>
+</div>
+
