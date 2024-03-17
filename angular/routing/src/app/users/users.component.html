@@ -1,1 +1,4 @@
 <p>users works!</p>
+<a [routerLink]="['profile',10]" [queryParams]="{cache:true,redirect:false}" [fragment]="'location'"
+>Go to user id: 10 </a>
+<router-outlet></router-outlet>

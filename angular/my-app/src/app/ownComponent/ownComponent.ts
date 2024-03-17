@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'own-component',
   templateUrl: './ownComponent.html',
 })
+
 export class ownComponent{
     clicked=false;
     onClick(){

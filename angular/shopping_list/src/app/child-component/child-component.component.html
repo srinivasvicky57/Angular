@@ -1,4 +1,4 @@
 <p>child-component works!{{loadedFeature}}</p>
-<input type="text" [(ngModel)]="name">
+<input type="text" [(ngModel)]="name" (ngModelChange)="change()"   (change)="onChange($event)">
 <button type="submit" (click)="addNewItem()">submit</button>
 

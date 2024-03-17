@@ -12,9 +12,14 @@ import { PostsComponent } from './games/posts/posts.component';
 import { RouterModule ,Routes } from '@angular/router';
 const routes=[
   {path:'',component:HomeComponent},
-  {path:'games',component:GamesComponent},
-  {path:'games/:id',component:PostsComponent},
-  {path:'users',component:UsersComponent}
+  {path:'games',component:GamesComponent , children:[
+    {path:':id',component:PostsComponent}
+  ]},
+  
+  {path:'users',component:UsersComponent,children:[
+    {path:'profile/:id',component:ProfilesComponent}
+  ]},
+ 
 ]
 @NgModule({
   declarations: [

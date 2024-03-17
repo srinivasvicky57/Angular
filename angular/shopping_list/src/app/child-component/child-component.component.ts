@@ -12,4 +12,12 @@ export class ChildComponentComponent {
 addNewItem() {
   this.newItemEvent.emit(this.name);
 }
+change(){
+  console.log('change');
+  
+}
+onChange(event: any){
+  console.log('just',event);
+  
+}
 }
